@@ -25,7 +25,7 @@ const Home = () => {
             align="center"
             sx={{ color: 'white', mb: 1, fontSize: { xs: '2rem', md: '2.5rem' } }}
           >
-            مسجد الزُّبَيْرُ بْنُ العَوَّام
+             مسجد الزُّبَيْرُ بْنُ العَوَّام بمدينتي
           </Typography>
           <Typography
             variant="h2"
@@ -33,7 +33,7 @@ const Home = () => {
             align="center"
             sx={{ color: 'secondary.main', fontSize: { xs: '1.5rem', md: '2rem' } }}
           >
-            Zubayr ibn al-Awwam Mosque
+            Zubayr ibn al-Awwam Mosque in Madinaty
           </Typography>
           <Typography
             variant="body1"

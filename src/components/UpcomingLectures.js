@@ -18,24 +18,78 @@ const UpcomingLectures = () => {
   const lectures = [
     {
       id: 1,
+      title: 'صور من حياة الصحابة',
+      lecturer: 'الشيخ أحمد جلال',
+      time: 'بعد صلاة الفجر',
+      duration: '30 mins',
+      date: '2025-11-07',
+      lecturerImage: '/images/lecturer2.jpg',
+    },
+    
+    {
+      id: 2,
       title: 'أسماء الله الحسني',
-      lecturer: 'شيخ إسلام',
-      time: '13:00',
+      lecturer: 'الشيخ إسلام',
+      time: 'بعد صلاة الجمعه',
       duration: '20 mins',
       date: '2025-11-07',
       lecturerImage: '/images/lecturer1.jpg',
     },
+    
     {
-      id: 2,
-      title: 'كتاب الكسير لأبن القيم: أعمال القلوب',
-      lecturer: 'شيخ أحمد جلال',
-      time: '19:00',
+      id: 3,
+      title: 'تدبر القرآن',
+      lecturer: 'الشيخ أشرف حجر ',
+      time: 'بعد صلاة الفجر',
+      duration: '30 mins',
+      date: '2025-11-08',
+      lecturerImage: '/images/lecturer2.jpg',
+    },
+    {
+      id: 4,
+      title: 'كتاب الإكسير لأبن القيم: أعمال القلوب',
+      lecturer: 'الشيخ أحمد جلال',
+      time: 'بعد صلاة العشاء',
       duration: '45 mins',
       date: '2025-11-09',
       lecturerImage: '/images/lecturer2.jpg',
     },
+    //   {
+    //   id: 5,
+    //   title: 'مقرأة',
+    //   lecturer: 'الشيخ د كمال ',
+    //   time: 'بعد صلاة الفجر',
+    //   duration: '30 mins',
+    //   date: '2025-11-09',
+    //   lecturerImage: '/images/lecturer2.jpg',
+    // },
+    {
+      id: 5,
+      title: 'أصول الإيمان',
+      lecturer: 'الشيخ أحمد جلال',
+      time: 'بعد صلاة الفجر',
+      duration: '45 mins',
+      date: '2025-11-12',
+      lecturerImage: '/images/lecturer2.jpg',
+    },
+    
   ];
+/*
+يوم الجمعة بعد الفجر 
+تدبر القرآن أ. أشرف حجر
 
+يوم السبت بعد الفجر
+صور من حياة الصحابة أحمد جلال
+
+يوم الأربعاء بعد الفجر 
+أصول الإيمان أحمد جلال
+
+يوم الأحد والثلاثاء والخميس بعد الفجر
+مقرأة د. كمال 
+
+وممكن تعديل كلمة الكسير 
+إلى ( الإكسير )
+*/
   return (
     <Card sx={{ bgcolor: 'white' }}>
       <CardContent>
@@ -78,29 +132,27 @@ const UpcomingLectures = () => {
                 {lecture.title}
               </Typography>
               <Typography variant="subtitle1" sx={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-                by {lecture.lecturer}
+                مع {lecture.lecturer}
               </Typography>
               <Box sx={{ display: 'flex', gap: 1, mt: 1, flexWrap: 'wrap' }}>
                 <Chip
                   icon={<CalendarTodayIcon sx={{ fontSize: 16 }} />}
-                  label={new Date(lecture.date).toLocaleDateString('en-US', {
-                    weekday: 'short',
-                    month: 'short',
-                    day: 'numeric',
+                  label={new Date(lecture.date).toLocaleDateString('ar', {
+                    weekday: 'long',
                   })}
                   size="small"
                   sx={{ bgcolor: 'white', color: 'primary.main' }}
                 />
                 <Chip
                   icon={<AccessTimeIcon sx={{ fontSize: 16 }} />}
-                  label={convertTo12Hour(lecture.time)}
+                  label={(lecture.time)}
                   size="small"
                   sx={{ bgcolor: 'secondary.main', color: 'white' }}
                 />
                 {lecture.duration && (
                   <Chip
                     label={lecture.duration}
-                    size="small"
+                    size="small"  
                     sx={{ bgcolor: 'rgba(255, 255, 255, 0.9)', color: 'primary.main', fontWeight: 'bold' }}
                   />
                 )}

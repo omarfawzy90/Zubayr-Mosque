@@ -7,7 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 const MosqueInfo = () => {
   const mosqueInfo = {
     name: 'Zubayr Mosque',
-    address: 'G5, Madinaty, Cairo, Egypt',
+    address: 'VG5, Madinaty, Cairo, Egypt',
     phone: '',
     email: '',
     mapUrl: 'https://www.google.com/maps/search/?api=1&query=30.0444,31.2357',
