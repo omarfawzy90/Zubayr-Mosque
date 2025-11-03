@@ -16,10 +16,10 @@ const UpcomingLectures = () => {
 
   // This would typically come from your backend
   const lectures = [
-    {
+     {
       id: 1,
-      title: 'صور من حياة الصحابة',
-      lecturer: 'الشيخ أحمد جلال',
+      title: 'تدبر القرآن',
+      lecturer: 'الشيخ أشرف حجر ',
       time: 'بعد صلاة الفجر',
       duration: '30 mins',
       date: '2025-11-07',
@@ -29,29 +29,38 @@ const UpcomingLectures = () => {
     {
       id: 2,
       title: 'أسماء الله الحسني',
-      lecturer: 'الشيخ إسلام',
+      lecturer: 'الشيخ إسلام محى',
       time: 'بعد صلاة الجمعه',
       duration: '20 mins',
       date: '2025-11-07',
       lecturerImage: '/images/lecturer1.jpg',
     },
-    
     {
       id: 3,
-      title: 'تدبر القرآن',
-      lecturer: 'الشيخ أشرف حجر ',
+      title: 'صور من حياة الصحابة',
+      lecturer: 'الشيخ أحمد جلال',
       time: 'بعد صلاة الفجر',
       duration: '30 mins',
       date: '2025-11-08',
       lecturerImage: '/images/lecturer2.jpg',
     },
+   
     {
       id: 4,
-      title: 'كتاب الإكسير لأبن القيم: أعمال القلوب',
+      title: 'كتاب الإكسير لإبن القيم: أعمال القلوب',
       lecturer: 'الشيخ أحمد جلال',
       time: 'بعد صلاة العشاء',
       duration: '45 mins',
       date: '2025-11-09',
+      lecturerImage: '/images/lecturer2.jpg',
+    },
+     {
+      id: 5,
+      title: 'الفقه الميسر',
+      lecturer: 'الشيخ أحمد جلال',
+      time: 'بعد صلاة الفجر',
+      duration: '45 mins',
+      date: '2025-11-10',
       lecturerImage: '/images/lecturer2.jpg',
     },
     //   {
@@ -64,7 +73,7 @@ const UpcomingLectures = () => {
     //   lecturerImage: '/images/lecturer2.jpg',
     // },
     {
-      id: 5,
+      id: 6,
       title: 'أصول الإيمان',
       lecturer: 'الشيخ أحمد جلال',
       time: 'بعد صلاة الفجر',
