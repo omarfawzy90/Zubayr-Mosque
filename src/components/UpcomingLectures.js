@@ -28,7 +28,7 @@ const UpcomingLectures = () => {
     {
       id: 2,
       title: 'كتاب الكسير لأبن القيم: أعمال القلوب',
-      lecturer: 'شيخ أحمد عبدالله',
+      lecturer: 'شيخ أحمد جلال',
       time: '19:00',
       duration: '45 mins',
       date: '2025-11-09',
